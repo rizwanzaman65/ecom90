@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopbolt Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+       .top-bar {
+    background-color: #f8f9fa; /* Light grey background */
+    font-size: 14px;
+}
+.top-bar a {
+    color: #000;
+    text-decoration: none;
+}
+.top-bar a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .top-bar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .top-bar .d-flex.align-items-center.mt-2 {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .top-bar .d-flex.align-items-center.mt-2 .form-select-sm {
+        flex-grow: 1;
+        margin-bottom: 0;
+    }
+    
+}
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #000;
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+        .navbar-light .navbar-nav .dropdown-menu {
+            background-color: #fff;
+        }
+        .navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
+            background-color: #f8f9fa;
+        }
+        .input-group .form-control {
+            border-right: none;
+        }
+        .input-group .btn {
+            border-left: none;
+            background-color: #ffc107; /* Yellow */
+            color: #000;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fff;
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+        
+        
+        
+        .promo-section {
+    background-color: #f8f9fa; /* Light background */
+    padding: 50px 0;
+    position: relative;
+}
+
+.promo-content h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.promo-content h2 {
+    font-weight: 900;
+    font-size: 6rem;
+    margin-bottom: 20px;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .promo-content h2 {
+        font-size: 4rem;
+    }
+}
+
+.promo-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.promo-content .btn-warning {
+    background-color: #ffc107;
+    color: #000;
+    padding: 10px 30px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.promo-content .btn-outline-dark {
+    padding: 10px 30px;
+    font-size: 1rem;
+}
+
+.promo-content .people-avatars img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: -10px;
+}
+
+.price-drop-tag {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    background-color: #ffc107;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transform: rotate(-15deg);
+}
+
+
+
+
+
+        .card-custom {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-img {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+        .card-content {
+            flex: 1;
+        }
+        .text-muted {
+            color: #6c757d;
+        }
+
+
+
+
+
+
+
+
+
+        .product-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        }
+        .product-image {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .product-rating {
+            color: #FFD700;
+            margin-bottom: 15px;
+        }
+        .add-to-cart-btn {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            border: none;
+            transition: all 0.3s ease-in-out;
+        }
+        .add-to-cart-btn:hover {
+            background-color: gray;
+        }
+        .wishlist-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #6c757d;
+            font-size: 1.5rem;
+        }
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Portfolio Section Styles for E-commerce Shoe Website
+--------------------------------------------------------------*/
+.portfolio {
+  padding: 60px 0;
+}
+
+.portfolio .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.portfolio #portfolio-filters {
+  padding: 5px 20px;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #f8f8f8;
+}
+
+.portfolio #portfolio-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio #portfolio-filters li:hover,
+.portfolio #portfolio-filters li.filter-active {
+  color: #FFC107;
+  background-color: #333;
+  border-radius: 30px;
+}
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.portfolio .portfolio-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-item img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio .portfolio-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-content:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-info h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.portfolio .portfolio-info p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.portfolio .add-to-cart {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #FFC107;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .add-to-cart:hover {
+  background-color: #FFC107;
+  color: #333;
+  border-color: #FFC107;
+}
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.promo-banner {
+    background-color: #b3e7f4;
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: row; /* Default layout for larger screens */
+}
+
+.promo-banner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.promo-banner p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #6c757d;
+}
+
+.promo-banner img {
+    max-width: 400px;
+    height: auto;
+}
+
+.order-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.order-btn:hover {
+    background-color: #444;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.sparkle {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    font-size: 1.5rem;
+    color: #00f;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .promo-banner {
+        flex-direction: column; /* Stack elements vertically on mobile screens */
+        text-align: center; /* Center text and buttons */
+    }
+
+    .promo-banner h1 {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .promo-banner p {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .promo-banner img {
+        max-width: 100%; /* Ensure image scales with the container */
+        margin-top: 1rem; /* Add spacing between text and image */
+    }
+
+    .order-btn {
+        padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+        .footer {
+            background-color: #0a253d;
+            color: #ffffff;
+            padding: 2rem 0;
+        }
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .footer p {
+            margin-bottom: 1.5rem;
+            color: #8a9ba8;
+            font-size: 1rem;
+            max-width: 300px;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-social-icons a {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .footer-social-icons a:hover {
+            color: #8a9ba8;
+        }
+        .footer-bottom {
+            border-top: 1px solid #324a5e;
+            padding-top: 1rem;
+            font-size: 0.9rem;
+            color: #8a9ba8;
+        }
+
+        .product-result {
+            display: none;
+        }
+        .clear-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 95px; /* Adjust the position according to your design */
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    z-index: 10;
+    font-size: 16px; /* Adjust the size of the cross icon */
+    color: #aaa; /* Color of the cross icon */
+}
+
+.payment-icons img {
+            width: 50px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Top Navigation Bar -->
+<div class="top-bar py-1">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+        <div class="d-flex align-items-center flex-wrap flex-md-nowrap">
+            <a href="#" class="me-3 mb-1">Find Store</a>
+            <a href="#" class="me-3 mb-1">Support@demo.com</a>
+            <a href="#" class="mb-1">Offer & Value</a>
+            <span class="mx-3 mb-1 d-none d-md-inline">|</span>
+            <a href="#" class="mb-1">Everyday Savers</a>
+        </div>
+        <div class="d-flex align-items-center mt-2 mt-md-0">
+            <select class="form-select form-select-sm me-3 mb-1" aria-label="Currency select">
+                <option selected>USD $</option>
+                <option value="1">EUR €</option>
+                <option value="2">GBP £</option>
+            </select>
+            <select class="form-select form-select-sm mb-1" aria-label="Language select">
+                <option selected>English</option>
+                <option value="1">French</option>
+                <option value="2">Spanish</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Middle Navigation Bar -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="index.html">
+            <img src="images.png" alt="Shopbolt Logo" width="120">
+        </a>
+        <div class="input-group w-50 position-relative">
+            <input id="searchInput" type="text" class="form-control" placeholder="Search" oninput="toggleClearIcon()">
+            <span id="clearIcon" class="clear-icon" onclick="clearSearch()">&#x2715;</span> <!-- Cross icon (X) -->
+            <button class="btn btn-warning" type="button" onclick="searchProduct()">Search</button>
+        </div>
+        
+        <div class="d-flex align-items-center">
+            <!-- Other navigation items -->
+        </div>
+    </div>
+</nav>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="shopByCategoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop By Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="shopByCategoriesDropdown">
+                            <li><a class="dropdown-item" href="#">Category 1</a></li>
+                            <li><a class="dropdown-item" href="#">Category 2</a></li>
+                        </ul>
+                    </li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                            <li><a class="dropdown-item" href="#">Shop 1</a></li>
+                            <li><a class="dropdown-item" href="#">Shop 2</a></li>
+                        </ul>
+                    </li>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Collection</a>
+                    </li>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Outerwear</a>
+                    </li>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trousers</a>
+                    </li>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+<!-- show products -->
+
+</body>
+<!-- Product Results -->
+<div id="productResults" class="container mt-4">
+    <div class="row product-result">
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img src="shoes.png" class="card-img-top" alt="Nike Air Max 270">
+                <div class="card-body">
+                    <h5 class="card-title">Nike Air Max 270</h5>
+                    <p class="card-text">Available on Amazon</p>
+                    <a href="#" class="btn btn-dark">View on Amazon</a>
+                    <button class="btn btn-warning">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img src="shoes.png" class="card-img-top" alt="Nike Air Zoom Pegasus">
+                <div class="card-body">
+                    <h5 class="card-title">Nike Air Zoom Pegasus</h5>
+                    <p class="card-text">Available on eBay</p>
+                    <a href="#" class="btn btn-dark">View on eBay</a>
+                    <button class="btn btn-warning">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img src="shoes.png" class="card-img-top" alt="Nike React Infinity Run">
+                <div class="card-body">
+                    <h5 class="card-title">Nike React Infinity Run</h5>
+                    <p class="card-text">Available on Nike</p>
+                    <a href="#" class="btn btn-dark">View on Nike</a>
+                    <button class="btn btn-warning">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img src="shoes.png" class="card-img-top" alt="Nike React Infinity Run">
+                <div class="card-body">
+                    <h5 class="card-title">Nike React Infinity Run</h5>
+                    <p class="card-text">Available on Nike</p>
+                    <a href="#" class="btn btn-dark">View on Nike</a>
+                    <button class="btn btn-warning">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img src="shoes.png" class="card-img-top" alt="Nike React Infinity Run">
+                <div class="card-body">
+                    <h5 class="card-title">Nike React Infinity Run</h5>
+                    <p class="card-text">Available on Nike</p>
+                    <a href="#" class="btn btn-dark">View on Nike</a>
+                    <button class="btn btn-warning">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img src="shoes.png" class="card-img-top" alt="Nike React Infinity Run">
+                <div class="card-body">
+                    <h5 class="card-title">Nike React Infinity Run</h5>
+                    <p class="card-text">Available on Nike</p>
+                    <a href="#" class="btn btn-dark">View on Nike</a>
+                    <button class="btn btn-warning">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function searchProduct() {
+    var input = document.getElementById("searchInput").value.toLowerCase();
+    var productResults = document.getElementById("productResults");
+    var productCards = productResults.getElementsByClassName("product-result");
+    var hideContentElements = document.getElementsByClassName("hidecontent");
+
+    if (input === "nike shoes") {
+        for (var i = 0; i < productCards.length; i++) {
+            productCards[i].style.display = "flex";
+        }
+        for (var i = 0; i < hideContentElements.length; i++) {
+            hideContentElements[i].style.display = "none";
+        }
+    } else {
+        for (var i = 0; i < productCards.length; i++) {
+            productCards[i].style.display = "none";
+        }
+        for (var i = 0; i < hideContentElements.length; i++) {
+            hideContentElements[i].style.display = "block"; // or whatever display style was originally
+        }
+    }
+}
+
+function toggleClearIcon() {
+    var input = document.getElementById("searchInput").value;
+    var clearIcon = document.getElementById("clearIcon");
+
+    if (input.length > 0) {
+        clearIcon.style.display = "block";
+    } else {
+        clearIcon.style.display = "none";
+        clearSearch(); // Call clearSearch() to hide products when input is empty
+    }
+}
+
+function clearSearch() {
+    document.getElementById("searchInput").value = '';
+    document.getElementById("clearIcon").style.display = "none";
+    var productCards = document.getElementById("productResults").getElementsByClassName("product-result");
+    var hideContentElements = document.getElementsByClassName("hidecontent");
+
+    for (var i = 0; i < productCards.length; i++) {
+        productCards[i].style.display = "none";
+    }
+    for (var i = 0; i < hideContentElements.length; i++) {
+        hideContentElements[i].style.display = "block"; // or whatever display style was originally
+    }
+}
+
+</script>
+
+
+
+
+
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footer-logo">
+                    <img src="nike-removebg-preview.png" width="20%" alt="Shopbolt Logo">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur. Est ut eget arcu ac purus quis. Mi quisque senectus elit posuere faucibus laoreet.</p>
+                <div class="footer-social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h5>Fiture</h5>
+                <a href="#">About</a>
+                <a href="#">Product</a>
+                <a href="#">Discover</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="col-md-2">
+                <h5>Support</h5>
+                <a href="#">Cart</a>
+                <a href="#">Login</a>
+                <a href="#">Condition</a>
+                <a href="#">Privacy</a>
+            </div>
+            <div class="col-md-2">
+                <h5>Categories</h5>
+                <a href="#">All</a>
+                <a href="#">Furniture</a>
+                <a href="#">Wallpapers</a>
+                <a href="#">Accessories</a>
+            </div>
+        </div>
+        <div class="footer-bottom text-center mt-4">
+            © 2024 Shopbolt. All rights reserved.
+        </div>
+    </div>
+</footer>   
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
